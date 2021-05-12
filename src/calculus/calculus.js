@@ -6,7 +6,7 @@
  * @return {number} Diff
  * 
  */
-exports.diff = function (f, density = 5) {
+export function diff(f, density = 5) {
     let dx = 2 * (10 ** (-density))
     let dy = (x) => f(x + (10 ** (-density))) - f(x - (10 ** (-density)))
 
@@ -20,7 +20,7 @@ exports.diff = function (f, density = 5) {
  * @return {number} Integral
  * 
  */
-exports.integral = function (f, density = 5) {
+export function integral(f, density = 5) {
     let g = (a, b) => {
         let sum = 0
         for (let k = a; k < b; k += 10 ** (-density)) {

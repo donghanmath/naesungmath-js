@@ -8,7 +8,7 @@
  * @return {number} Euler polyhedrob theroem
  * 
  */
-exports.eulerPolyhedronTheorem = function (v, e, f) {
+export function eulerPolyhedronTheorem(v, e, f) {
     if ((v - e + f) === 2) return true
     if ((v - e + f) !== 2) return false
 }

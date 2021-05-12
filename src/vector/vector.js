@@ -1,12 +1,12 @@
 /**
- *  225 Ramdom vector
+ *  225 Random vector
  *
  * @author: DPS0340
  * @param {string} len
  * @return {number}
  * 
  */
-exports.randomVector = function (len, norm = 1) {
+export function randomVector(len, norm = 1) {
     let x = []
 
     let currentNorm = 0

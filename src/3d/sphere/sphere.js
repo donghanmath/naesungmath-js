@@ -6,7 +6,7 @@
  * @return {number} The surface area of sphere
  * 
  */
-exports.sphereArea = function (r) {
+export function sphereArea(r) {
     return (4 * (Math.PI) * (r ** 2))
 }
 /**
@@ -17,6 +17,6 @@ exports.sphereArea = function (r) {
  * @return {number} THe volume of sphere
  * 
  */
-exports.sphereVolume = function (r) {
+export function sphereVolume(r) {
     return ((4 / 3) * (Math.PI) * (r ** 2))
 }

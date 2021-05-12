@@ -7,7 +7,7 @@
  * @return {number} The volume of triangular cone
  * 
  */
-exports.triangularPyramidVolume = function (a, h) {
+export function triangularPyramidVolume(a, h) {
     return ((1 / 3) * a * h)
 }
 
@@ -20,7 +20,7 @@ exports.triangularPyramidVolume = function (a, h) {
  * @return {number}  The volume of square pyramid
  * 
  */
-exports.squarePyramidVolume_ah = function (a, h) {
+export function squarePyramidVolume_ah(a, h) {
     return ((1 / 3) * (a ** 2) * h)
 }
 
@@ -33,7 +33,7 @@ exports.squarePyramidVolume_ah = function (a, h) {
  * @return {number} a plus b
  * 
  */
-exports.squarePyramidVolume_ab = function (a, b) {
+export function squarePyramidVolume_ab(a, b) {
     return ((1 / 3) * (a ** 2) * (((b ** 2) - ((a ** 2) / 2)) ** (0.5)))
 }
 
@@ -46,7 +46,7 @@ exports.squarePyramidVolume_ab = function (a, b) {
  * @return {number} The volume of square pyramid
  * 
  */
-exports.squarePyramidArea_ab = function (a, b) {
+export function squarePyramidArea_ab(a, b) {
     return ((a * ((4 * (b ** 2) - (a ** 2)) ** (0.5))) + (a ** 2))
 }
 
@@ -59,7 +59,7 @@ exports.squarePyramidArea_ab = function (a, b) {
  * @return {number} The surface area of square pyramid
  * 
  */
-exports.squarePyramidArea_ah = function (a, h) {
+export function squarePyramidArea_ah(a, h) {
     return ((a * ((4 * (h ** 2) - (a ** 2)) ** (0.5))) + (a ** 2))
 }
 
@@ -72,6 +72,6 @@ exports.squarePyramidArea_ah = function (a, h) {
  * @return {number} The height of square pyramid
  * 
  */
-exports.squarePyramidHeight = function (a, b) {
+export function squarePyramidHeight(a, b) {
     return (((b ** 2) - ((a ** 2) / 2)) ** (0.5))
 }

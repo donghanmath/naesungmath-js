@@ -2,7 +2,7 @@
 
 [Official Docs](https://github.com/minseo0388)
 
-**대한수학회와 수학강사연구모임이 배포한 `과학은 마법이다! 주문을 외워보자 <수학공식>`**을 기준으로 만들었습니다.
+대한수학회와 수학강사연구모임이 배포한 `과학은 마법이다! 주문을 외워보자 <수학공식>`을 기준으로 만들었습니다.
 
 We made it based on **`<Math Formula>`**, which was distributed by the Korean Mathematical Society and Korean Mathematical Instructor Research Group.
 
@@ -28,9 +28,9 @@ For more information, contact minseo0388@daum.net or 129dot03@kakao.com.
 
 **Published as `Naesungmath` at npmjs.org**
 
-**최신 안정화 버전은 `2.0.0` 입니다.**
+**최신 안정화 버전은 `2.1.0` 입니다.**
 
-**The latest stabilized version is `2.0.0`.**
+**The latest stabilized version is `2.1.0`.**
 
 ### Update Notice
 

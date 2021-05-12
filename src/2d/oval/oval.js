@@ -7,7 +7,7 @@
  * @return {number} The area of eval
  * 
  */
-exports.ovalArea = function (a, b) {
+export function ovalArea(a, b) {
     return ((Math.PI) * a * b)
 }
 
@@ -20,6 +20,6 @@ exports.ovalArea = function (a, b) {
  * @return {number} THe eccentricity of eval
  * 
  */
-exports.evalEccentricity = function (a, b) {
+export function evalEccentricity(a, b) {
     return ((1 - ((b ** 2) / (a ** 2))) ** 0.5)
 }

@@ -6,7 +6,7 @@
  * @return {number} The volume of cube
  * 
  */
-exports.cubeVolume = function (a) {
+export function cubeVolume(a) {
     return (a ** 3)
 }
 
@@ -18,7 +18,7 @@ exports.cubeVolume = function (a) {
  * @return {number} The surface area of cube
  * 
  */
-exports.cubeArea = function (a) {
+export function cubeArea(a) {
     return (6 * (a ** 2))
 }
 
@@ -32,7 +32,7 @@ exports.cubeArea = function (a) {
  * @return {number} The volume of cuboid
  * 
  */
-exports.cuboidVolume = function (a, b, c) {
+export function cuboidVolume(a, b, c) {
     return (a * b * c)
 }
 
@@ -46,7 +46,7 @@ exports.cuboidVolume = function (a, b, c) {
  * @return {number} The surface area of cuboid
  * 
  */
-exports.cuboidArea = function (a, b, c) {
+export function cuboidArea(a, b, c) {
     return (2 * ((a * b) + (b * c) + (c * a)))
 }
 
@@ -60,6 +60,6 @@ exports.cuboidArea = function (a, b, c) {
  * @return {number} a plus b
  * 
  */
-exports.cuboidDiagonal = function (a, b, c) {
+export function cuboidDiagonal(a, b, c) {
     return (((a ** 2) + (b ** 2) + (c ** 2)) ** 0.5)
 }

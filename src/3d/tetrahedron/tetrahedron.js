@@ -1,12 +1,12 @@
 // 056 �����ü�� �ѳ��� ����//
-exports.tetrahedronArea = function (a) {
+export function tetrahedronArea(a) {
     return ((3 ** (0.5)) * (a ** 2))
 }
 // 057 �����ü�� ���� ����//
-exports.tetrahedronHeight = function (a) {
+export function tetrahedronHeight(a) {
     return (((2 / 3) ** (0.5)) * a)
 }
 // 055 �����ü�� ���� ����//
-exports.tetrahedronVolume = function (a) {
+export function tetrahedronVolume(a) {
     return (((2 ** (0.5)) / 12) * (a ** 3))
 }

@@ -6,7 +6,7 @@
  * @return {number} LUDecompostion of matrix
  * 
  */
-exports.LUDecomposition = function (matrix) {
+export function LUDecomposition(matrix) {
     if (matrix.length !== matrix[0].length) {
         console.log('��� ���� ũ�Ⱑ ���� ����')
         return
@@ -58,7 +58,7 @@ exports.LUDecomposition = function (matrix) {
  * @return {number} Solves System of linear equations.
  * 
  */
-exports.Cramer = function (mat) {
+export function Cramer(mat) {
     let B = []
     let X = []
 
@@ -102,7 +102,7 @@ exports.Cramer = function (mat) {
  * @return {number} LQDecomposition
  * 
  */
-exports.LQDecomposition = function (mat, iterationCount = 1000) {
+export function LQDecomposition(mat, iterationCount = 1000) {
     let AT = exports.transpose(mat)
 
     AT = exports.QRDecomposition(AT, iterationCount)
@@ -122,7 +122,7 @@ exports.LQDecomposition = function (mat, iterationCount = 1000) {
  * @return {number} Determinant
  * 
  */
-exports.determinant = function (matrix) {
+export function determinant(matrix) {
     if (matrix.length !== matrix[0].length) {
         return
     }
@@ -158,7 +158,7 @@ exports.determinant = function (matrix) {
  * @return {number} Finding Multiple Roots of Function.
  * 
  */
-exports.Durand_Kerner = function (f, rootsNumber = 1, iterationCount = 15) {
+export function Durand_Kerner(f, rootsNumber = 1, iterationCount = 15) {
     let roots = []
     for (let i = 0; i < rootsNumber; i++) {
         roots.push(i + 1)
@@ -186,7 +186,7 @@ exports.Durand_Kerner = function (f, rootsNumber = 1, iterationCount = 15) {
  * @return {number} Eigendecomposition of a matrix.
  * 
  */
-exports.EigenVectorDecomposition = function (mat, iterationCount = 100) {
+export function EigenVectorDecomposition(mat, iterationCount = 100) {
     let V = []
     for (let i = 0; i < mat[0].length; i++) {
         V.push(exports.randomVector(mat.length, 1))
@@ -278,7 +278,7 @@ exports.EigenVectorDecomposition = function (mat, iterationCount = 100) {
  * @return {number} Gaussian elimination
  * 
  */
-exports.gaussian = function (matrix, m, n) {
+export function gaussian(matrix, m, n) {
     let X = []
     for (let i = 0; i < matrix.length; i++) {
         X.push([])
@@ -313,7 +313,7 @@ exports.gaussian = function (matrix, m, n) {
  * @return {number} Gauss–Seidel method.
  * 
  */
-exports.Gauss_Seidel = function (mat, iterationCount = 15) {
+export function Gauss_Seidel(mat, iterationCount = 15) {
     let x = []
 
     for (let i = 0; i < mat.length; i++) {
@@ -343,7 +343,7 @@ exports.Gauss_Seidel = function (mat, iterationCount = 15) {
  * @return {number} houseHolder
  * 
  */
-exports.houseHolder = function (mat) {
+export function houseHolder(mat) {
     function SG(N) {
         if (N < 0) {
             return -1
@@ -404,7 +404,7 @@ exports.houseHolder = function (mat) {
     }
 }
 
-exports.QRDecomposition = function (mat) {
+export function QRDecomposition(mat) {
     function sqrtDotProduct(row1, row2) {
         let res = 0
         for (let i = 0; i < row1.length; i++) {
@@ -480,7 +480,7 @@ exports.QRDecomposition = function (mat) {
  * @return {number} IdentityMatrix
  * 
  */
-exports.IdentityMatrix = function (n) {
+export function IdentityMatrix(n) {
     let res = []
     for (let i = 0; i < n; i++) {
         res.push([])
@@ -503,7 +503,7 @@ exports.IdentityMatrix = function (n) {
  * @return {number} InverseMatrix
  * 
 */
-exports.InverseMatrix = function (A) {
+export function InverseMatrix(A) {
     if (exports.determinant(A) === 0) {
         return null
     }
@@ -542,7 +542,7 @@ exports.InverseMatrix = function (A) {
  * @return {number} Matrix subtraction of matrixA and matrixB
  * 
  */
-exports.matrixAdd = function (matrixA, matrixB) {
+export function matrixAdd(matrixA, matrixB) {
     if (matrixA.length !== matrixB.length || matrixA[0].length !== matrixB[0].length) {
         console.log('����� ũ�� ����ġ')
         return
@@ -566,7 +566,7 @@ exports.matrixAdd = function (matrixA, matrixB) {
  * @return {matrix} Matrix product of matrixA and matrixB
  * 
  */
-exports.matrixMultiply = function (matrixA, matrixB) {
+export function matrixMultiply(matrixA, matrixB) {
     if (matrixA[0].length !== matrixB.length) {
         console.log('�߸��� ��İ� ������ ũ��')
         return
@@ -597,7 +597,7 @@ exports.matrixMultiply = function (matrixA, matrixB) {
  * @return {number} Matrix scalar product
  * 
  */
-exports.matrixScalaMultiplation = function (matrix, k) {
+export function matrixScalaMultiplation(matrix, k) {
     let res = []
     for (let i = 0; i < matrix.length; i++) {
         res.push([])
@@ -618,7 +618,7 @@ exports.matrixScalaMultiplation = function (matrix, k) {
  * @return {number} Matrix sum of matrixA and matrixB
  * 
  */
-exports.matrixSub = function (matrixA, matrixB) {
+export function atrixSub(matrixA, matrixB) {
     if (matrixA.length !== matrixB.length || matrixA[0].length !== matrixB[0].length) {
         console.log('����� ũ�� ����ġ')
         return
@@ -641,7 +641,7 @@ exports.matrixSub = function (matrixA, matrixB) {
  * @return {number} normalization
  * 
  */
-exports.normailze = function (row) {
+export function normailze(row) {
     return exports.matrix_scala_multiplation(row, 1 / exports.sqrtDotProduct(row, row))
 }
 
@@ -654,7 +654,7 @@ exports.normailze = function (row) {
  * @return {matrix} outterProduct_matrix
  * 
  */
-exports.outterProduct_matrix = function (u, v) {
+export function outterProduct_matrix(u, v) {
     return exports.matrixmultiply(u, exports.transpose(v))
 }
 
@@ -666,7 +666,7 @@ exports.outterProduct_matrix = function (u, v) {
  * @return {number} SingularValueDecomposition
  * 
  */
-exports.SingularValueDecomposition = function (mat, iterationCount = 2) {
+export function SingularValueDecomposition(mat, iterationCount = 2) {
     let M = mat;
     let VT = [];
     let Sigma = [];
@@ -696,7 +696,7 @@ exports.SingularValueDecomposition = function (mat, iterationCount = 2) {
  * @return {number} sqrtDotProduct
  * 
  */
-exports.sqrtDotProduct = function (row1, row2) {
+export function sqrtDotProduct(row1, row2) {
     let res = 0
     for (let i = 0; i < row1.length; i++) {
         res += row1[i] * row2[i]
@@ -713,7 +713,7 @@ exports.sqrtDotProduct = function (row1, row2) {
  * @return {number} trace
  * 
  */
-exports.trace = function (matrix) {
+export function trace(matrix) {
     let res = 0
     for (let i = 0; i < matrix.length; i++) {
         res += matrix[i][i]
@@ -729,7 +729,7 @@ exports.trace = function (matrix) {
  * @return {number} transpose
  * 
  */
-exports.transpose = function (mat) {
+export function transpose(mat) {
     let res = []
 
     for (let i = 0; i < mat[0].length; i++) {

@@ -7,7 +7,7 @@
  * @return {random}
  * 
  */
-exports.ACORN = function (seed = new Date().getTime(), moduloPower = 60, order = 10) {
+export function ACORN(seed = new Date().getTime(), moduloPower = 60, order = 10) {
     let M = 2 ** moduloPower
 
     let temp = 0 + (seed.toString().split('').reverse().join(''))
@@ -49,7 +49,7 @@ exports.ACORN = function (seed = new Date().getTime(), moduloPower = 60, order =
  * @return Newton's method
  * 
  */
-exports.newtonsMethod = function (f, count, initx = 2) {
+export function newtonsMethod(f, count, initx = 2) {
     function diff(f, x, density = 5) {
         const dx = 2 * (10 ** -density)
         const dy = f(x + (10 ** -density)) - f(x - (10 ** -density))

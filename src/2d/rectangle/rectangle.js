@@ -7,7 +7,7 @@
  * @return {number} The area of parallelogram
  * 
  */
-exports.parallelogramArea = function (a, h) {
+export function parallelogramArea(a, h) {
     return (a * h)
 }
 /**
@@ -19,7 +19,7 @@ exports.parallelogramArea = function (a, h) {
  * @return {number} THe area of rectangle with the side is a, b
  * 
  */
-exports.rectangleArea = function (a, b) {
+export function rectangleArea(a, b) {
     return (a * b)
 }
 /**
@@ -31,7 +31,7 @@ exports.rectangleArea = function (a, b) {
  * @return {number} Pythagoras Theorem
  * 
  */
-exports.rectangleDiagonal = function (a, b) {
+export function rectangleDiagonal(a, b) {
     return (((a) ** 2 + (b) ** 2) ** 0.5)
 }
 /**
@@ -43,7 +43,7 @@ exports.rectangleDiagonal = function (a, b) {
  * @return {number} The circumstance of rectangle with the side is a, b
  * 
  */
-exports.rectanglePerimeter = function (a, b) {
+export function rectanglePerimeter(a, b) {
     return ((a) * 2 + (b) * 2)
 }
 /**
@@ -55,7 +55,7 @@ exports.rectanglePerimeter = function (a, b) {
  * @return {number} The area of rhombus with digonal a, b
  * 
  */
-exports.rhombusArea = function (a, b) {
+export function rhombusArea(a, b) {
     return (0.5 * (a) * (b))
 }
 /**
@@ -66,7 +66,7 @@ exports.rhombusArea = function (a, b) {
  * @return {number} Area of a square with one side a
  * 
  */
-exports.square = function (a) {
+export function square(a) {
     return (a ** 2)
 }
 /**
@@ -79,7 +79,7 @@ exports.square = function (a) {
  * @return {number} The area of square
  * 
  */
-exports.squareArea = function (a, b, t) {
+export function squareArea(a, b, t) {
     return (0.5 * (a) * (b) * (Math.sin(t)))
 }
 /**
@@ -92,6 +92,6 @@ exports.squareArea = function (a, b, t) {
  * @return {number} The area of trapezoid
  * 
  */
-exports.trapezoidArea = function (a, b, h) {
+export function trapezoidArea(a, b, h) {
     return (0.5 * (a + b) * h)
 }
