@@ -42,7 +42,7 @@ Or with yarn:
 
 ## Contributors
 
-[@AkiaCode](https://github.com/akiacode) [@DPS0340](https://github.com/dps0340) [@comjun04](https://github.com/comjun04)
+[@pmh_only](https://github.com/pmh_only) [@AkiaCode](https://github.com/akiacode) [@DPS0340](https://github.com/dps0340) [@comjun04](https://github.com/comjun04)
 
 ## License
 
