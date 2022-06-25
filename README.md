@@ -8,25 +8,22 @@ We made it based on `<Math Formula>`, which was distributed by the Korean Mathem
 
 [![image](https://nodei.co/npm/naesungmath.png?downloads=true&stars=true)](https://nodei.co/npm/naesungmath/)
 
-## Contributing
+# Update 3.0
+- Switch to a Typescript to increase readability when using code.
+- Modify code to work automatically.
+- 
 
-Issue 와 Pull Request는 검토 후 과감히 수용합니다.
+## Contributing
 
 Review and accept Issue and Pull Request boldly.
 
-문의는 minseo0388@daum.net 또는 129dot03@kakao.com으로 하면 됩니다.
-
 For more information, contact minseo0388@daum.net or 129dot03@kakao.com.
 
-## npm package 배포
-
-npmjs.org에 `Naesungmath`로 배포됩니다.
+## npm package
 
 Published as `Naesungmath` at npmjs.org
 
-최신 버전은 `2.1.0` 입니다.
-
-The latest version is `2.1.0`.
+The latest version is `3.0.1`.
 
 ### Add package
 
