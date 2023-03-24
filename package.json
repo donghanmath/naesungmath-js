@@ -4,7 +4,9 @@
   "description": "Math and Science",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "files": ["lib/**/*.ts"],
+  "files": [
+    "lib/**/*.ts"
+  ],
   "scripts": {
     "prebuild": "node -p \"'export const VERSION = \\'' + require('./package.json').version + '\\''\" > src/version.ts",
     "build": "tsc --build",
@@ -27,5 +29,8 @@
     "eslint-plugin-n": "^15.6.1",
     "eslint-plugin-promise": "^6.1.1",
     "typescript": "^5.0.2"
+  },
+  "dependencies": {
+    "yarn": "^1.22.19"
   }
 }
