@@ -1,5 +1,8 @@
 # Naesungmath
 
+[![install size](https://packagephobia.com/badge?p=naesungmath@3.0.1)](https://packagephobia.com/result?p=naesungmath@3.0.1)
+
+
 대한수학회와 수학강사연구모임이 배포한 `과학은 마법이다! 주문을 외워보자 <수학공식>`을 기준으로 만들었습니다.
 
 We made it based on `<Math Formula>`, which was distributed by the Korean Mathematical Society and Korean Mathematical Instructor Research Group.
